@@ -1,0 +1,18 @@
+{
+  "name": "femundfilou/kirby-accessibility-check",
+  "description": "Kirby plugin to add accessibility checks",
+  "type": "kirby-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Justus Kraft",
+      "email": "justus@femundfilou.de",
+      "homepage": "https://femundfilou.de"
+    }
+  ],
+  "require": {
+    "getkirby/composer-installer": "^1.2",
+    "php": ">=8.1.0"
+  }
+}
