@@ -1,16 +1,19 @@
 {
   "name": "kirby-accessibility-check",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "Kirby CMS Plugin to add accessibility checking capabilities to your website.",
   "main": "index.js",
   "scripts": {
     "dev": "npx kirbyup src/index.js --watch",
-    "build": "npx kirbyup src/index.js"
+    "build": "npx kirbyup src/index.js",
+    "release": "release-it"
   },
   "keywords": [],
-  "author": "",
+  "author": "Justus Kraft <justus@femundfilou.de>",
   "license": "MIT",
   "devDependencies": {
-    "kirbyuse": "^0.9.2"
+    "@release-it/conventional-changelog": "^9.0.4",
+    "kirbyuse": "^0.9.2",
+    "release-it": "^17.11.0"
   }
 }
