@@ -8,9 +8,11 @@ This plugin adds accessibility checking capabilities to your Kirby CMS powered w
 
 ## Features
 
-- Adds an accessibility check button to the panel
-- Uses sa11y for accessibility testing
-- Only active for logged in users
+- Adds accessibility check button to panel
+- Only active when editor chooses to enable it (uses session)
+- Automatically includes required assets when active
+
+![Plugin in action](kirby-accessibility-check.gif)
 
 ## Installation
 
@@ -58,5 +60,5 @@ You can overwrite each provider by creating a snippet to your `site/snippets` fo
 MIT
 
 ## Credits
-- Justus Kraft
+- [Justus Kraft](https://femundfilou.de)
 - Accessibility quality assurance tool [Sa11y](https://github.com/ryersondmp/sa11y)
