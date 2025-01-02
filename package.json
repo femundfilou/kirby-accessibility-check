@@ -12,6 +12,7 @@
   "author": "Justus Kraft <justus@femundfilou.de>",
   "license": "MIT",
   "devDependencies": {
+    "@release-it/bumper": "^6.0.1",
     "@release-it/conventional-changelog": "^9.0.4",
     "kirbyuse": "^0.9.2",
     "release-it": "^17.11.0"

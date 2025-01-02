@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@release-it/bumper':
+        specifier: ^6.0.1
+        version: 6.0.1(release-it@17.11.0)
       '@release-it/conventional-changelog':
         specifier: ^9.0.4
         version: 9.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.11.0)
@@ -139,6 +142,12 @@ packages:
   '@pnpm/npm-conf@2.3.1':
     resolution: {integrity: sha512-c83qWb22rNRuB0UaVCI0uRPNRr8Z0FWnEIvT47jiHAmOIUHbBOg5XvV7pM5x+rKn9HRpjxquDbXYSXr3fAKFcw==}
     engines: {node: '>=12'}
+
+  '@release-it/bumper@6.0.1':
+    resolution: {integrity: sha512-yeQsbGNMzzN0c/5JV1awXP6UHX/kJamXCKR6/daS0YQfj98SZXAcLn3JEq+qfK/Jq/cnATnlz5r6UY0cfBkm1A==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      release-it: ^17.0.0
 
   '@release-it/conventional-changelog@9.0.4':
     resolution: {integrity: sha512-eSZVATX2qiyxzpXdIVNczxTGR+uD4lG/ZEfDDYBJ8vKIj6fKp+eYicIS8Ff/eL3bA9XiQTmllKqxPRzmz9d45w==}
@@ -437,6 +446,10 @@ packages:
 
   deprecation@2.3.1:
     resolution: {integrity: sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==}
+
+  detect-indent@7.0.1:
+    resolution: {integrity: sha512-Mc7QhQ8s+cLrnUfU/Ji94vG/r8M26m8f++vyres4ZoojaRDpZ1eSIh/EpzLNwlWuvzSZ3UbDFspjFvTDXe6e/g==}
+    engines: {node: '>=12.20'}
 
   dot-prop@5.3.0:
     resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
@@ -768,6 +781,9 @@ packages:
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
+
+  lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
 
   lodash.capitalize@4.2.1:
     resolution: {integrity: sha512-kZzYOKspf8XVX5AvmQF94gQW0lejFVgb80G85bU4ZWzoJ6C03PQg3coYAUpSTpQWelrZELd3XWgHzw4Ck5kaIw==}
@@ -1416,6 +1432,17 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
+  '@release-it/bumper@6.0.1(release-it@17.11.0)':
+    dependencies:
+      '@iarna/toml': 2.2.5
+      detect-indent: 7.0.1
+      fast-glob: 3.3.2
+      ini: 4.1.1
+      js-yaml: 4.1.0
+      lodash-es: 4.17.21
+      release-it: 17.11.0
+      semver: 7.6.3
+
   '@release-it/conventional-changelog@9.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.11.0)':
     dependencies:
       concat-stream: 2.0.0
@@ -1713,6 +1740,8 @@ snapshots:
       esprima: 4.0.1
 
   deprecation@2.3.1: {}
+
+  detect-indent@7.0.1: {}
 
   dot-prop@5.3.0:
     dependencies:
@@ -2042,6 +2071,8 @@ snapshots:
       package-json: 10.0.1
 
   lines-and-columns@1.2.4: {}
+
+  lodash-es@4.17.21: {}
 
   lodash.capitalize@4.2.1: {}
 
