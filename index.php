@@ -4,7 +4,7 @@ use Kirby\Cms\App;
 
 App::plugin('femundfilou/kirby-accessibility-check', [
     'options' => [
-        'enabled' => false
+        'enabled' => true
     ],
     'hooks' => [
         'page.render:after' => function (string $contentType, array $data, string $html, Kirby\Cms\Page $page) {

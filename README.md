@@ -56,6 +56,16 @@ buttons:
 
 You can overwrite each provider by creating a snippet to your `site/snippets` folder. For example, you would create the file `site/snippets/kirby-accessibility-check/providers/sa11y.php` to add your own Sa11y implementation or configuration, e.g. if you don't want to use the CDN or stick to a specific version.
 
+### Configuration
+
+You can configure the plugin by adding the following to your `site/config/config.php` file:
+
+```php
+return [
+    'femundfilou.kirby-accessibility-check.enabled' => false // default: true
+];
+```
+
 ## License
 MIT
 
