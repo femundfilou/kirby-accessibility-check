@@ -38,5 +38,7 @@ $lang = $langMap[$panelLanguage] ?? 'en';
 <script src="https://cdn.jsdelivr.net/combine/gh/ryersondmp/sa11y@latest/dist/js/lang/<?= $lang ?>.umd.js,gh/ryersondmp/sa11y@latest/dist/js/sa11y.umd.min.js"></script>
 <script>
     Sa11y.Lang.addI18n(Sa11yLang<?= ucfirst($lang) ?>.strings);
-    const sa11y = new Sa11y.Sa11y();
+    const sa11y = new Sa11y.Sa11y({
+        checkRoot: "body",
+    });
 </script>
